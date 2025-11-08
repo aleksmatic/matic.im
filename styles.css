@@ -132,15 +132,20 @@ h3 {
 
 /* --- Avatar fix --- */
 .avatar {
-  width: 140px;
+  width: 160px;
   aspect-ratio: 1 / 1;
   border-radius: 14px;
   display: block;
   object-fit: cover;
   border: 1px solid var(--border);
   background: #0f131a;
-  margin: 0 auto 14px auto; /* centers image horizontally */
+
+  /* centers inside its card */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 14px;
 }
+
 
 /* --- Details fix --- */
 .kv {
@@ -209,4 +214,15 @@ footer {
 
 .small {
   font-size: 0.925rem;
+}
+
+@media (max-width: 859px) {
+  aside.card {
+    text-align: center;
+  }
+  .kv {
+    text-align: left; /* keep labels tidy */
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
