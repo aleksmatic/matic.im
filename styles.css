@@ -50,7 +50,14 @@ h3{font-size: clamp(18px, 2.6vw, 22px)}
   width:140px; aspect-ratio:1/1; border-radius: 14px; display:block; object-fit:cover;
   border:1px solid var(--border); background:#0f131a;
 }
-.kv{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:start}
+.kv {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:8px;
+  align-items:start;
+  word-break:break-word;
+}
+
 .kv dt{color:var(--muted)}
 .kv dd{margin:0}
 .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
